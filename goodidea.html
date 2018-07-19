@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <title>colors</title>
+  <style>
+    .picker {
+      height: 70px;
+      width: 70px;
+      border-radius: 5px;
+      margin: 5px 5px;
+    }
+    .picker-black { background-color: black; }
+    .picker-aqua { background-color: aqua; }
+    .picker-orange { background-color: orange; }
+    .picker-yellow { background-color: #ffe100; }
+    .picker-red { background-color: red; }
+    .picker-indicator {
+      height: 10px;
+      width: 415px;
+      border-radius: 5px;
+      margin: 5px 5px;
+      background-color: white;
+    }
+    .canvas {
+      display: grid;
+      width: 80px;
+    }
+    .canvas-area {
+      border: 0.1px solid #f7faff;
+      margin: 0px;
+      height: 20px;
+      width: 20px;
+    }
+
+  </style>
+
+  <script>
+    function picked(button) {
+      var style = window.getComputedStyle(button);
+      document.getElementsByClassName('picker-indicator')[0].style.backgroundColor = style.backgroundColor;
+    }
+
+    function colorme(obj) {
+      var color = document.getElementsByClassName('picker-indicator')[0].style.backgroundColor;
+      obj.style.backgroundColor = color;
+    }
+
+    function createcanvas(len) {
+      var area = len*len;
+      var canvas = "";
+      for (var i=0; i<area; i++) {
+        canvas += '<div class="canvas-area" onclick="colorme(this)"></div>';
+      }
+      var columns = "";
+      for(var i=0; i<len; i++) {
+        columns += ' auto';
+      }
+
+      document.getElementsByClassName('canvas')[0].style["grid-template-columns"] = columns;
+      document.getElementsByClassName('canvas')[0].innerHTML = canvas;
+
+    }
+
+  </script>
+
+</head>
+<body>
+  <button type="button" class="picker picker-black" id="red" onclick="picked(this)"></button>
+  <button type="button" class="picker picker-aqua" onclick="picked(this)"></button>
+  <button type="button" class="picker picker-orange" onclick="picked(this)"></button>
+  <button type="button" class="picker picker-yellow" onclick="picked(this)"></button>
+  <button type="button" class="picker picker-red" onclick="picked(this)"></button>
+  <br>
+  <button type="button" class="picker-indicator" disabled="disabled"></button>
+  <br>
+  <button type="button" onclick="createcanvas(7)">make</button>
+  <div class="canvas"></div>
+  <br>
+  <div id="wutm8"></div>
+</body>
+</html>
