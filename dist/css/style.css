@@ -7,10 +7,14 @@
     /* Border for developing */
     border-style: solid;
     border-width: 1px;
-    border-color: #000;
+    border-color: rgb(0, 80, 252);
 }
 header{
     background-color: #dedede;
+}
+.canvas img{
+    margin: auto;
+    width: 90%;
 }
 hr{
     border: 1px solid black;
@@ -74,6 +78,22 @@ ul{
 li{
     list-style-type: none;
 }
+.subTitle{
+    padding: 1rem;  
+}
+.canvas{
+    margin: 0 auto;
+}
+.panel{
+    height: 7%;
+    background-color: #aaa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
 .wrapper{
     margin: 5rem auto;
     width: 100%;
@@ -84,14 +104,25 @@ li{
 	grid-row-gap: 1rem;
 }
 @media screen and (min-width: 768px){
-    .wrapper{
-        width: 70%;
+    .canvas{
+        width: 60%;
     }
+    .canvas img{
+        width: 100%;
+    }
+    .panel{
+        position: relative;
+        height: auto;
+        width: 40%;
+    }
+    main{
+        display: flex;
+        margin: 4rem;
+    }
+    
 }
 @media screen and (min-width: 1024px) {
-    .wrapper{
-    width: 70%;
-    }
+
 }
 @media screen and (min-width: 87.5em) {
     html{
