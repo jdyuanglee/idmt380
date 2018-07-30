@@ -1,1 +1,2 @@
-# IDMT380 Team Beta
+# idmt380
+#colorpeople #michelangelo #finalgroupproject #coloringbook
