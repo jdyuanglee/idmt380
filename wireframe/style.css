@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: lightcoral;
+
+    /* overflow: hidden; */
+
+    /* Border for developing */
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 80, 252);     */
+}
+p{
+    font-size: .6rem;
+}
+nav img{
+    /* z-index: 9; */
+}
+html{
+	font-size: 100%;
+}
+
+img{
+	/* display: block; */
+	max-width: 100%;
+	margin: auto;
+}
+.left, .right{
+    position: absolute;
+    width: 20%;
+    transition: 1s ease-in-out;
+}
+.left{
+    margin-block-end: 10rem;
+    left: 0;
+}
+.right{
+    right: 0;
+}
+nav{
+    height: 3rem;
+    display: flex;
+}
+nav h1{
+    text-align: center;
+    margin: 2.5rem 0;
+    font-size: 2.5rem;
+}
+
+main img{
+    /* width: 500px; */
+	text-align: center; 
+    clip-path: inset(13% 0% 11% 0% round 10%);
+    /* mask-border-source: url(img/Left.png); */
+}
+.mid{
+    z-index: 3;
+    margin: auto;
+}
+
+.leftSide{
+    margin: 0 -5rem;
+    display: flex;
+}
+.rightSide{
+    margin: 0 -5rem;
+    display: flex;
+}
+.twoL, .twoR{
+    z-index: 2;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+.threeL, .threeR{
+    display: none;
+    z-index: 1;
+    position: relative;
+    width: 48%;
+    margin: auto -6rem;
+}
+main{
+    display: flex;
+    /* overflow: hidden; */
+    /* transition: 1s ease-in-out; */
+    /* width: 100%; */
+    width: 60%;
+    /* height: 65vh; */
+    height: 65vh;
+    margin: 3rem auto;
+    /* padding: 0 8rem; */
+}
+footer{
+    display: flex;
+    align-items: flex-end;
+    align-content: space-between;
+    position: fixed;
+    bottom: 1%;
+}
+footer img{
+    height: auto;
+    width: 40%;
+}
+footer p{
+    margin: 0 1rem
+}
+@media screen and (min-width: 87.5em) {
+    html{
+        font-size: 120%;
+    }
+    *{
+        background-color: lightblue;    
+        }
+}
+@media screen and (min-width: 768px){
+    .left, .right{
+        top: -9rem;
+    }
+    main{
+    height: 71vh;
+    }
+    p{
+        font-size: 1rem;
+    }
+    *{
+        background-color: lightgreen;    
+        }
+    .twoL, .twoR{
+        /* width: 150%; */
+    }
+    .threeL, .threeR{
+        display: block;
+        /* width: 100%; */
+    }
+}
+@media screen and (min-width: 1024px){
+    .left, .right{
+        top: -10rem;
+    }
+    main{
+    height: 7   0vh;
+
+    }
+    *{
+    background-color: lightblue;    
+    }
+}
