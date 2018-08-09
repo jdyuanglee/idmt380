@@ -1,131 +1,262 @@
 *{
-    font-family: 'Ruluko', sans-serif;
-    text-align: center;
-    box-sizing: border-box; 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+
+    font-family: 'Ruluko', sans-serif;
+
+    /* overflow: hidden; */
+
     /* Border for developing */
-    border-style: solid;
+    /* border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 80, 252);
+    border-color: rgb(0, 80, 252);     */
 }
-header{
-    background-color: #dedede;
+p{
+    font-size: .7rem;
 }
-.display img{
+nav img{
+    /* z-index: 9; */
+}
+html{
+	font-size: 100%;
+}
+
+img{
+	/* display: block; */
+	/* max-width: 100%; */
+	/* margin: auto;     */
+}
+.left, .right{
+    position: absolute;
+    width: 20%;
+    transition: 1s ease-in-out;
+}
+.left{
+    margin-block-end: 10rem;
+    left: 0;
+}
+.right{
+    right: 0;
+}
+nav{
+    /* height: 3rem; */
+    display: flex;
+}
+nav h1{
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 2.5rem;
+}
+
+main img{
+    /* width: 30rem; */
+	text-align: center;
+    /* clip-path: inset(13% 0% 11% 0% round 10%); */
+    /* mask-border-source: url(img/Left.png); */
+}
+.mid{
+    z-index: 3;
     margin: auto;
-    width: 90%;
 }
-hr{
-    border: 1px solid black;
-    width: 7rem;
-    margin: 1rem auto;
+
+.leftSide{
+    margin: 0 -5rem;
+    display: flex;
 }
-h1{
-    font-weight: 100;
+.rightSide{
+    margin: 0 -5rem;
+    display: flex;
 }
-.title{
-    margin: 5rem;
-}
-nav li{
-	padding: 12px;
-}
-/* navbar*/
-li > a{
+.twoL, .twoR{
+    z-index: 2;
     position: relative;
-    text-decoration: none;
-    color: #000;
+    width: 70%;
+    margin: auto;
 }
-li > a:hover:before{
-	visibility: visible;
-	transform: scaleX(1);
+.threeL, .threeR{
+    display: none;
+    z-index: 1;
+    position: relative;
+    width: 48%;
+    margin: auto -6rem;
 }
-li > a:before{
-	color: #000;
-	margin: 0 0 -.1rem 0;
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.3s ease-in-out 0s;
+main{
+    display: flex;
+    /* overflow: hidden; */
+    /* transition: 1s ease-in-out; */
+    width: 100%;
+    /* width: 60%; */
+    /* height: 65vh; */
+    height: 65vh;
+    /* margin: 3rem auto; */
+    /* margin-top: 20vh; */
+    /* padding: 0 8rem; */
 }
-nav ul{
-    max-height: none;
-    padding: 1rem 0 0 0;
+footer{
+    display: flex;
+    align-items: flex-end;
+    align-content: space-between;
+    position: fixed;
+    bottom: 1%;
+}
+footer img{
+    height: auto;
+    width: 40%;
+}
+footer p{
+    margin: 0 1rem
+}
+
+
+/* COLORING PAGE */
+.wrapper{
+    margin: auto;
     text-align: center;
 }
-nav ul li{
+
+.picker {
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 5px 5px;
+  }
+  .picker-black { background-color: black; }
+  .picker-aqua { background-color: aqua; }
+  .picker-orange { background-color: orange; }
+  .picker-yellow { background-color: #ffe100; }
+  .picker-red { background-color: red; }
+  .picker-indicator {
+    height: 10px;
+    width: 415px;
+    border-radius: 5px;
+    margin: 5px 5px;
     background-color: white;
-    display: inline;
-    padding: 0 1rem;
-}
-
-nav ul li a{
-    letter-spacing: .1rem;
-    color: #000;	
-}
-/*  */
-ul{
-	display: flex;
-	justify-content: space-around;
-    flex-direction: row;
-    width: 30%;
+  }
+  svg {
     margin: auto;
-}
-li{
-    list-style-type: none;
-}
-.subTitle{
-    padding: 1rem;  
-}
-.display{
-    margin: 0 auto;
-}
-.panel{
-    height: 7%;
-    background-color: #aaa;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
-.wrapper{
-    margin: 5rem auto;
-    width: 100%;
-	/* padding: 1rem; */
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-gap: 1.5rem;
-	grid-row-gap: 1rem;
-}
-@media screen and (min-width: 768px){
-    .display{
-        width: 60%;
-    }
-    .display img{
-        width: 100%;
-    }
-    .panel{
-        position: relative;
-        height: auto;
-        width: 40%;
-    }
-    .canvas{
-        display: flex;
-        margin: 4rem;
-    }
-    
-}
-@media screen and (min-width: 1024px) {
+    width: 80vw;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+  }
+  svg path {
+  }
+  .deabc576-19a5-456f-b29a-256d19410fea {
+    fill: #fff;
+    pointer-events: all;
+    display: inline-block;
+  }
+  .deabc576-19a5-456f-b29a-256d19410fea:hover {
+    fill: #000;
+  }
 
-}
-@media screen and (min-width: 87.5em) {
+
+  /* Media Query */
+  @media screen and (min-width: 87.5em) {
     html{
         font-size: 120%;
     }
+    *{
+        background-color: lightblue;
+        }
+}
+@media screen and (min-width: 768px){
+    svg{
+    width: 40vw;
+    }
+    .left, .right{
+        top: -9rem;
+    }
+    main{
+    height: 71vh;
+    /* margin-top: 130vh; */
+    }
+    p{
+        font-size: 1rem;
+    }
+    *{
+        background-color: #fff;
+        }
+    .twoL, .twoR{
+        /* width: 150%; */
+    }
+    .threeL, .threeR{
+        display: block;
+        /* width: 100%; */
+    }
+}
+@media screen and (min-width: 1024px){
+    svg{
+        width: 20vw;
+        }
+    .left, .right{
+        top: -10rem;
+    }
+    main{
+    height: 70vh;
+    /* margin-top: 20vh; */
+    }
+    *{
+    background-color: #fff;
+    }
+}
+
+
+/* --- SLICK CSS --- */
+
+.slick-slide {
+  transition: transform .2s ease-in-out;
+  transform: scale(0.6);
+  z-index: 10;
+  box-shadow: 0px 10px 24px -4px rgba(0,0,0,0.75);
+  /* border-color: black;
+  border-width: 1px;
+  border-style: solid;  */
+}
+
+.slick-center {
+  transform: scale(1.0) !important;
+  z-index: 20 !important;
+}
+
+.slick-prev {
+  z-index: 999;
+  position: fixed;
+  bottom: 15%;
+  right: 60vw;
+  border-color:  lightblue;
+}
+
+.slick-next{
+  z-index: 999;
+  position: fixed;
+  bottom: 15%;
+  left: 60vw;
+  border-color:  #FE5946;
+}
+button{
+  transition: background-color 0.3s ease;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+button:hover{
+  color: #bbb;
+}
+button:active{
+  color: #bbb;
+}
+.slick-slide{
+  transform: scale(.8);
+  display: flex;
+}
+.slick-slider{
+  display: flex;
 }
