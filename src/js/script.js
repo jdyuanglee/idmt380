@@ -1,13 +1,27 @@
-var style;
-var chosenColor;
-
-function picked(button) {
-  style = window.getComputedStyle(button);
-  chosenColor = style.backgroundColor;
-  document.getElementsByClassName('picker-indicator')[0].style.backgroundColor = style.backgroundColor;
-}
-
-$('path').on('click', function() {
-    console.log('click');
-    $(this).css( 'fill', chosenColor );
+$(document).ready(function(){
+  $('.carousel').slick({
+     centerMode: true,
+     centerPadding: '0px',
+     slidesToShow: 5,
+     responsive: [
+       {
+         breakpoint: 960,
+         settings: {
+           arrows: false,
+           centerMode: true,
+           centerPadding: '40px',
+           slidesToShow: 3
+         }
+       },
+       {
+         breakpoint: 620,
+         settings: {
+           arrows: false,
+           centerMode: true,
+           centerPadding: '40px',
+           slidesToShow: 1
+         }
+       }
+     ]
+  });
 });

@@ -45,3 +45,9 @@ Thumbs.db
 *.ogg
 *.ogv
 *.webm
+
+# Other #
+############
+*.sketch
+dist/
+node_modules
