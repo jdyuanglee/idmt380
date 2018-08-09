@@ -49,5 +49,5 @@ Thumbs.db
 # Other #
 ############
 *.sketch
-dist
+dist/
 node_modules
