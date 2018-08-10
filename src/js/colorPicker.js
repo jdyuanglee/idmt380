@@ -8,6 +8,5 @@ function picked(button) {
 }
 
 $('path').on('click', function() {
-    console.log('click');
-    $(this).css( 'fill', chosenColor );
+    $(this).css('fill', chosenColor);
 });
