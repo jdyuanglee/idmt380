@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    background-color: #fff;
 
     font-family: 'Ruluko', sans-serif;
 
@@ -128,6 +127,17 @@ footer p{
   .picker-orange { background-color: orange; }
   .picker-yellow { background-color: #ffe100; }
   .picker-red { background-color: red; }
+  .picker-blue { background-color: blue; }
+  .picker-pink { background-color: pink; }
+  .picker-green { background-color: green; }
+  .picker-purple { background-color: purple; }
+  .picker-gray { background-color: gray; }
+  .picker-lime { background-color: lime; }
+  .picker-navy { background-color: navy; }
+  .picker-fuchsia { background-color: fuchsia; }
+  .picker-maroon { background-color: maroon; }
+  .picker-silver { background-color: silver; }
+  .picker-white { background-color: white; }
   .picker-indicator {
     height: 10px;
     width: 415px;
@@ -160,9 +170,6 @@ footer p{
     html{
         font-size: 120%;
     }
-    *{
-        background-color: lightblue;
-        }
 }
 @media screen and (min-width: 768px){
     svg{
@@ -178,9 +185,6 @@ footer p{
     p{
         font-size: 1rem;
     }
-    *{
-        background-color: #fff;
-        }
     .twoL, .twoR{
         /* width: 150%; */
     }
@@ -200,63 +204,4 @@ footer p{
     height: 70vh;
     /* margin-top: 20vh; */
     }
-    *{
-    background-color: #fff;
-    }
-}
-
-
-/* --- SLICK CSS --- */
-
-.slick-slide {
-  transition: transform .2s ease-in-out;
-  transform: scale(0.6);
-  z-index: 10;
-  box-shadow: 0px 10px 24px -4px rgba(0,0,0,0.75);
-  /* border-color: black;
-  border-width: 1px;
-  border-style: solid;  */
-}
-
-.slick-center {
-  transform: scale(1.0) !important;
-  z-index: 20 !important;
-}
-
-.slick-prev {
-  z-index: 999;
-  position: fixed;
-  bottom: 15%;
-  right: 60vw;
-  border-color:  lightblue;
-}
-
-.slick-next{
-  z-index: 999;
-  position: fixed;
-  bottom: 15%;
-  left: 60vw;
-  border-color:  #FE5946;
-}
-button{
-  transition: background-color 0.3s ease;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 5px;
-  width: 10rem;
-  height: 3rem;
-  font-size: 1.3rem;
-}
-button:hover{
-  color: #bbb;
-}
-button:active{
-  color: #bbb;
-}
-.slick-slide{
-  transform: scale(.8);
-  display: flex;
-}
-.slick-slider{
-  display: flex;
 }
