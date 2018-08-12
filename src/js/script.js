@@ -18,10 +18,19 @@ $(document).ready(function(){
          settings: {
            arrows: false,
            centerMode: true,
-           centerPadding: '40px',
+           centerPadding: '6rem',
            slidesToShow: 1
          }
-       }
+       },
+       {
+        breakpoint: 450,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '2.5rem',
+          slidesToShow: 1
+        }
+      }
      ]
   });
 });
