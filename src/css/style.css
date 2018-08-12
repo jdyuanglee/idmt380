@@ -1,19 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 100%;
     font-family: 'Ruluko', sans-serif;
     /* overflow: hidden; */
 
     /* Border for developing */
-    border-style: solid;
+    /* border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 80, 252);    
+    border-color: rgb(0, 80, 252);     */
 }
+
 p{
     font-size: .7rem;
 }
+
 html{
 	font-size: 100%;
 }
@@ -22,24 +24,30 @@ html{
     position: absolute;
     width: 19vw;
 }
+
 .left{
     left: 0;
 }
+
 .right{
     top: 0;
 }
+
 .right{
     right: 0;
     top: 0;
 }
+
 nav{
     display: flex;
 }
+
 nav h1{
     text-align: center;
     margin: 5rem 0;
     font-size: 2.5rem;
 }
+
 footer{
     display: flex;
     align-items: flex-end;
@@ -47,24 +55,38 @@ footer{
     position: fixed;
     bottom: 1%;
 }
+
 footer img{
     height: auto;
     width: 40%;
 }
+
 footer p{
     margin: 0 .7rem
 }
+
 .carousel{
     position: absolute;
     top: 25vh;
 }
+
 #logo{
-    width: 50vw;
+    width: auto;
     margin: 2rem auto;
 }
+
+#element{
+  transition: .1s ease-in-out;
+}
+
+#element:hover {
+    cursor: pointer;
+}
+
 main{
     margin: auto;
 }
+
 .slick-slide{
     margin: 2rem 0;
 }
@@ -130,7 +152,7 @@ main{
 }
 @media screen and (min-width: 768px){
     #logo{
-        width: 20vw;
+        width: auto;
     }
     /* .carousel{
         margin: 6vh 0;
