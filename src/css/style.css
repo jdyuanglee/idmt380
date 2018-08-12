@@ -3,96 +3,42 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-
     font-family: 'Ruluko', sans-serif;
-
     /* overflow: hidden; */
 
     /* Border for developing */
-    /* border-style: solid;
+    border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 80, 252);     */
+    border-color: rgb(0, 80, 252);    
 }
 p{
     font-size: .7rem;
-}
-nav img{
-    /* z-index: 9; */
 }
 html{
 	font-size: 100%;
 }
 
-img{
-	/* display: block; */
-	/* max-width: 100%; */
-	/* margin: auto;     */
-}
 .left, .right{
     position: absolute;
-    width: 20%;
-    transition: 1s ease-in-out;
+    width: 19vw;
 }
 .left{
-    margin-block-end: 10rem;
     left: 0;
 }
 .right{
+    top: 0;
+}
+.right{
     right: 0;
+    top: 0;
 }
 nav{
-    /* height: 3rem; */
     display: flex;
 }
 nav h1{
     text-align: center;
     margin: 5rem 0;
     font-size: 2.5rem;
-}
-
-main img{
-    /* width: 30rem; */
-	text-align: center;
-    /* clip-path: inset(13% 0% 11% 0% round 10%); */
-    /* mask-border-source: url(img/Left.png); */
-}
-.mid{
-    z-index: 3;
-    margin: auto;
-}
-
-.leftSide{
-    margin: 0 -5rem;
-    display: flex;
-}
-.rightSide{
-    margin: 0 -5rem;
-    display: flex;
-}
-.twoL, .twoR{
-    z-index: 2;
-    position: relative;
-    width: 70%;
-    margin: auto;
-}
-.threeL, .threeR{
-    display: none;
-    z-index: 1;
-    position: relative;
-    width: 48%;
-    margin: auto -6rem;
-}
-main{
-    display: flex;
-    /* overflow: hidden; */
-    /* transition: 1s ease-in-out; */
-    width: 100%;
-    /* width: 60%; */
-    /* height: 65vh; */
-    height: 65vh;
-    /* margin: 3rem auto; */
-    /* margin-top: 20vh; */
-    /* padding: 0 8rem; */
 }
 footer{
     display: flex;
@@ -106,16 +52,27 @@ footer img{
     width: 40%;
 }
 footer p{
-    margin: 0 1rem
+    margin: 0 .7rem
 }
-
+.carousel{
+    position: absolute;
+    top: 25vh;
+}
+#logo{
+    width: 50vw;
+    margin: 2rem auto;
+}
+main{
+    margin: auto;
+}
+.slick-slide{
+    margin: 2rem 0;
+}
 
 /* COLORING PAGE */
-.wrapper{
-    margin: auto;
+.palette{
     text-align: center;
 }
-
 .picker {
     height: 70px;
     width: 70px;
@@ -140,17 +97,17 @@ footer p{
   .picker-white { background-color: white; }
   .picker-indicator {
     height: 10px;
-    width: 415px;
+    width: 95%;
     border-radius: 5px;
     margin: 5px 5px;
     background-color: white;
   }
   svg {
-    margin: auto;
+    /* margin: 0 10vw; */
     width: 80vw;
     pointer-events: none;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #000;
   }
   svg path {
@@ -161,7 +118,7 @@ footer p{
     display: inline-block;
   }
   .deabc576-19a5-456f-b29a-256d19410fea:hover {
-    fill: #000;
+    fill: #bbb;
   }
 
 
@@ -172,36 +129,42 @@ footer p{
     }
 }
 @media screen and (min-width: 768px){
+    #logo{
+        width: 20vw;
+    }
+    /* .carousel{
+        margin: 6vh 0;
+    } */
+    .wrapper{
+        display: flex;
+    }
     svg{
     width: 40vw;
-    }
-    .left, .right{
-        top: -9rem;
-    }
-    main{
-    height: 71vh;
-    /* margin-top: 130vh; */
     }
     p{
         font-size: 1rem;
     }
-    .twoL, .twoR{
-        /* width: 150%; */
+    .left{
+        top: -10vw;
     }
-    .threeL, .threeR{
-        display: block;
-        /* width: 100%; */
+    .left, .right{
+        width: 13vw;
     }
 }
 @media screen and (min-width: 1024px){
-    svg{
-        width: 20vw;
-        }
-    .left, .right{
-        top: -10rem;
+    .wrapper{
+        margin: 0 16vw;
+        display: flex;
+        width: 80%;
     }
-    main{
-    height: 70vh;
-    /* margin-top: 20vh; */
+    .carousel{
+        top: 22vh;
+    }
+    svg{
+        width: 30vw;
+    }
+    .palette{
+        width: 25vw;
+        text-align: center;
     }
 }
