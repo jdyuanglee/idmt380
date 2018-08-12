@@ -4,12 +4,12 @@
     box-sizing: border-box;
     width: 100%;
     font-family: 'Ruluko', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     /* Border for developing */
-    /* border-style: solid;
+    border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 80, 252);     */
+    border-color: rgb(0, 80, 252);    
 }
 p{
     font-size: .7rem;
@@ -21,7 +21,6 @@ html{
 .left, .right{
     position: absolute;
     width: 19vw;
-    transition: 1s ease-in-out;
 }
 .left{
     left: 0;
@@ -71,11 +70,9 @@ main{
 }
 
 /* COLORING PAGE */
-.wrapper{
-    margin: auto;
+.palette{
     text-align: center;
 }
-
 .picker {
     height: 70px;
     width: 70px;
@@ -100,17 +97,17 @@ main{
   .picker-white { background-color: white; }
   .picker-indicator {
     height: 10px;
-    width: 415px;
+    width: 95%;
     border-radius: 5px;
     margin: 5px 5px;
     background-color: white;
   }
   svg {
-    margin: auto;
+    /* margin: 0 10vw; */
     width: 80vw;
     pointer-events: none;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #000;
   }
   svg path {
@@ -121,7 +118,7 @@ main{
     display: inline-block;
   }
   .deabc576-19a5-456f-b29a-256d19410fea:hover {
-    fill: #000;
+    fill: #bbb;
   }
 
 
@@ -138,6 +135,9 @@ main{
     /* .carousel{
         margin: 6vh 0;
     } */
+    .wrapper{
+        display: flex;
+    }
     svg{
     width: 40vw;
     }
@@ -152,10 +152,19 @@ main{
     }
 }
 @media screen and (min-width: 1024px){
+    .wrapper{
+        margin: 0 16vw;
+        display: flex;
+        width: 80%;
+    }
     .carousel{
         top: 22vh;
     }
     svg{
-        width: 20vw;
-        }
+        width: 30vw;
+    }
+    .palette{
+        width: 25vw;
+        text-align: center;
+    }
 }
