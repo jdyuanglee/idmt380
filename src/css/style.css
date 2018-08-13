@@ -132,17 +132,17 @@ main{
     border-width: 2px;
     border-color: #000;
   }
-  svg path {
-  }
-  .deabc576-19a5-456f-b29a-256d19410fea {
-    fill: #fff;
+  g g {
     pointer-events: all;
     display: inline-block;
+    transition: fill 0.1s ease-in-out;
   }
-  .deabc576-19a5-456f-b29a-256d19410fea:hover {
-    fill: #bbb;
+  g g:hover path{
+    fill: grey;
   }
-
+  #outlines *{
+    pointer-events: none;
+  }
 
   /* Media Query */
   @media screen and (min-width: 87.5em) {
