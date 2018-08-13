@@ -84,6 +84,10 @@ footer p{
     cursor: pointer;
 }
 
+#logo:hover{
+    cursor: pointer;
+}
+
 main{
     margin: auto;
 }
