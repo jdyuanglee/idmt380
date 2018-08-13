@@ -9,7 +9,7 @@
     /* Border for developing */
     /* border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 80, 252);     */
+    border-color: rgb(0, 80, 252);*/
 }
 
 p{
@@ -40,6 +40,7 @@ html{
 
 nav{
     display: flex;
+    position: fixed;
 }
 
 nav h1{
@@ -93,6 +94,10 @@ main{
 
 /* COLORING PAGE */
 .palette{
+      /* clip-path:  inset(0% 0% 0% 0% round 10%); */
+    position: absolute;
+    background-color:rgba(255, 255, 255, 1);
+    margin: 80vh 0 5vh 0;
     text-align: center;
 }
 .picker {
@@ -125,8 +130,13 @@ main{
     background-color: white;
   }
   svg {
-    /* margin: 0 10vw; */
-    width: 80vw;
+    /* z-index: -1; */
+    transform: translate(-50%, 0);
+    position: fixed;
+    top: 22%;
+    left: 50%;
+    width: auto;
+    height: 60vh;
     pointer-events: none;
     border-style: solid;
     border-width: 2px;
@@ -145,7 +155,7 @@ main{
   }
 
   /* Media Query */
-  @media screen and (min-width: 87.5em) {
+@media screen and (min-width: 87.5em) {
     html{
         font-size: 120%;
     }
@@ -156,12 +166,21 @@ main{
     }
     /* .carousel{
         margin: 6vh 0;
-    } */
-    .wrapper{
-        display: flex;
+        } */
+    nav{
+        position: absolute;
     }
     svg{
-    width: 40vw;
+        position: absolute;
+        top: 15%;
+    }
+    .palette{
+        position: absolute;
+    transform: translate(-50%, 0);
+
+        width: 70%;
+        left: 50%;
+        background: none;
     }
     p{
         font-size: 1rem;
@@ -175,18 +194,25 @@ main{
 }
 @media screen and (min-width: 1024px){
     .wrapper{
-        margin: 0 16vw;
+        padding: 22vh 0 0 0;
+        width: 45rem;
+        margin: auto;
         display: flex;
-        width: 80%;
-    }
-    .carousel{
-        top: 22vh;
+        align-content: space-around;
     }
     svg{
-        width: 30vw;
+        top: 0%;
+        left: 0%;
+    transform: translate(0, 0);
+
+        position: relative;
     }
     .palette{
-        width: 25vw;
+        left: 0;
+    transform: translate(0, 0);
+        margin: 0 auto;
+        position: relative;
+        width: 20rem;
         text-align: center;
     }
 }
