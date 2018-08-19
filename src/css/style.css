@@ -149,12 +149,14 @@ main{
   g g {
     pointer-events: all;
     display: inline-block;
-    transition: fill 0.1s ease-in-out;
   }
-  g g:hover path{
+  g g path {
+    /* transition: fill 0.2s ease-in-out; */
+  }
+  /* g g:hover path{
     fill: grey;
-  }
-  #outlines *{
+  } */
+  #outlines {
     pointer-events: none;
   }
 
