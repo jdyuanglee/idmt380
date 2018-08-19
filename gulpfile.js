@@ -23,7 +23,7 @@ gulp.task('js', () => {
   del(['./dist/js/*.+(js|map)']);
   return gulp.src('src/js/*.js')
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+    .pipe(uglify({mangle:true}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/js/'));
 });
