@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 
@@ -24,7 +23,6 @@ gulp.task('js', () => {
   del(['./dist/js/*.+(js|map)']);
   return gulp.src('src/js/*.js')
     .pipe(sourcemaps.init())
-    // .pipe(concat('all.js'))
     .pipe(uglify({mangle:true}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/js/'));
