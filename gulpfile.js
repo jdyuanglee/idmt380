@@ -43,7 +43,8 @@ gulp.task('live', ['html', 'css', 'js', 'img'], function() {
     browserSync.init({
         server: "./dist/"
     });
-    gulp.watch('./src/js/*.js', ['js']);
+    gulp.watch('./src/*.html', ['html']);
     gulp.watch('./src/css/*.css', ['css']);
+    gulp.watch('./src/js/*.js', ['js']);
     gulp.watch(['./src/js/*.js','./src/css/*.css', './src/index.html']).on('change', browserSync.reload);
 });
