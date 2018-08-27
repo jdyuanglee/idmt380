@@ -2,7 +2,12 @@ const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const sourcemaps = require('gulp-sourcemaps');
+const browserSync = require('browser-sync').create();
+const watch = require('gulp-watch');
+const reload = browserSync.reload;
 const del = require('del');
+
+gulp.task('default', ['live']);
 
 gulp.task('html', () => {
   del(['./dist/*.html']);
@@ -34,4 +39,11 @@ gulp.task('img', () => {
     .pipe(gulp.dest('dist/img/'));
 });
 
-gulp.task('default', ['html','css','js','img']);
+gulp.task('live', ['html', 'css', 'js', 'img'], function() {
+    browserSync.init({
+        server: "./dist/"
+    });
+    gulp.watch('./src/js/*.js', ['js']);
+    gulp.watch('./src/css/*.css', ['css']);
+    gulp.watch(['./src/js/*.js','./src/css/*.css', './src/index.html']).on('change', browserSync.reload);
+});
