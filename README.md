@@ -1,7 +1,7 @@
 # IDMT380 Group Beta
 This is the **BETA** version
 
-[Link to the page](http://yuangli.com/idmt380/dist)
+[Link to the page](http://yuangli.com/idmt380/)
 
 ## Instructions
 * Open terminal and navigate to project folder.
