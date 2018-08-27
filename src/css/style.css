@@ -9,8 +9,10 @@
     /* Border for developing */
     /* border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 80, 252);*/
+    border-color: rgb(0, 80, 252); */
 }
+
+button:focus {outline:0;}
 
 p{
     font-size: .7rem;
@@ -84,6 +86,28 @@ footer p{
     cursor: pointer;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:100px;
+    width: 95%;
+}
+
+.grid > #element{
+    transition: .2s ease-in-out;
+  transform: scale(0.80);
+  border-radius: 5%;  
+  border-color: black;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: 0px 10px 24px -4px rgba(0,0,0,0.75);
+}
+
+#element > img{
+    clip-path:  inset(0% 0% 0% 0% round 5%);
+}
+
 #logo:hover{
     cursor: pointer;
 }
@@ -95,42 +119,94 @@ main{
 .slick-slide{
     margin: 2rem 0;
 }
+.switch{
+    width: 10rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
 
 /* COLORING PAGE */
 .palette{
-      /* clip-path:  inset(0% 0% 0% 0% round 10%); */
+    /* clip-path:  inset(0% 0% 0% 0% round 10%); */
+    transform: translate(-50%, 0);
     position: absolute;
-    background-color:rgba(255, 255, 255, 1);
-    margin: 80vh 0 5vh 0;
+    /* background-color:rgba(255, 255, 125, 1); */
+    background-color: lightblue;
+    border-radius: 2.5rem 2.5rem 0 0;
+    left: 50vw;
+    margin: 90vh 0 0 0;
     text-align: center;
 }
 .picker {
-    height: 70px;
-    width: 70px;
-    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 25px;
     margin: 5px 5px;
   }
-  .picker-black { background-color: black; }
-  .picker-aqua { background-color: aqua; }
-  .picker-orange { background-color: orange; }
-  .picker-yellow { background-color: #ffe100; }
-  .picker-red { background-color: red; }
-  .picker-blue { background-color: blue; }
-  .picker-pink { background-color: pink; }
-  .picker-green { background-color: green; }
-  .picker-purple { background-color: purple; }
-  .picker-gray { background-color: gray; }
-  .picker-lime { background-color: lime; }
-  .picker-navy { background-color: navy; }
-  .picker-fuchsia { background-color: fuchsia; }
-  .picker-maroon { background-color: maroon; }
-  .picker-silver { background-color: silver; }
-  .picker-white { background-color: white; }
+  .picker-FFFFFF { background-color: #FFFFFF; }
+  .picker-8E53A1 { background-color: #8E53A1; }
+  .picker-6ABD46 { background-color: #6ABD46; }
+  .picker-71CCDC { background-color: #71CCDC; }
+  .picker-F7ED45 { background-color: #F7ED45; }
+  .picker-F7DAAF { background-color: #F7DAAF; }
+  .picker-EC2527 { background-color: #EC2527; }
+  .picker-F16824 { background-color: #F16824; }
+  .picker-CECCCC { background-color: #CECCCC; }
+  .picker-5A499E { background-color: #5A499E; }
+  .picker-06753D { background-color: #06753D; }
+  .picker-024259 { background-color: #024259; }
+  .picker-FDD209 { background-color: #FDD209; }
+  .picker-7D4829 { background-color: #7D4829; }
+  .picker-931B1E { background-color: #931B1E; }
+  .picker-B44426 { background-color: #B44426; }
+  .picker-979797 { background-color: #979797; }
+  .picker-C296C5 { background-color: #C296C5; }
+  .picker-54B948 { background-color: #54B948; }
+  .picker-3C75BB { background-color: #3C75BB; }
+  .picker-F7ED45 { background-color: #F7ED45; }
+  .picker-E89D5E { background-color: #E89D5E; }
+  .picker-F26F68 { background-color: #F26F68; }
+  .picker-676868 { background-color: #676868; }
+  .picker-9060A8 { background-color: #9060A8; }
+  .picker-169E49 { background-color: #169E49; }
+  .picker-3CBEB7 { background-color: #3CBEB7; }
+  .picker-E5B07D { background-color: #E5B07D; }
+  .picker-EF3C46 { background-color: #EF3C46; }
+  .picker-FDBE17 { background-color: #FDBE17; }
+  .picker-4E4D4E { background-color: #4E4D4E; }
+  .picker-6B449B { background-color: #6B449B; }
+  .picker-BACD3F { background-color: #BACD3F; }
+  .picker-1890CA { background-color: #1890CA; }
+  .picker-FCD55A { background-color: #FCD55A; }
+  .picker-D8C077 { background-color: #D8C077; }
+  .picker-A62E32 { background-color: #A62E32; }
+  .picker-F16A2D { background-color: #F16A2D; }
+  .picker-343433 { background-color: #343433; }
+  .picker-583E98 { background-color: #583E98; }
+  .picker-BA539F { background-color: #BA539F; }
+  .picker-9D2482 { background-color: #9D2482; }
+  .picker-DD64A5 { background-color: #DD64A5; }
+  .picker-DB778D { background-color: #DB778D; }
+  .picker-EC4394 { background-color: #EC4394; }
+  .picker-E0398C { background-color: #E0398C; }
+  .picker-68AF46 { background-color: #68AF46; }
+  .picker-4455A4 { background-color: #4455A4; }
+  .picker-FBEE34 { background-color: #FBEE34; }
+  .picker-AD732A { background-color: #AD732A; }
+  .picker-D91E36 { background-color: #D91E36; }
+  .picker-F99B2A { background-color: #F99B2A; }
+
   .picker-indicator {
-    height: 10px;
-    width: 95%;
-    border-radius: 5px;
-    margin: 5px 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    height: 2rem;
+    color: #fff;
+    width: 50%;
+    border-radius: 20px;
+    margin: 1rem 0;
     background-color: white;
   }
   svg {
@@ -182,8 +258,8 @@ main{
     }
     .palette{
         position: absolute;
-    transform: translate(-50%, 0);
-
+        transform: translate(-50%, 0);
+        margin: 77vh 0 0 0;
         width: 70%;
         left: 50%;
         background: none;
@@ -197,11 +273,16 @@ main{
     .left, .right{
         width: 13vw;
     }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 85%;
+    }
 }
 @media screen and (min-width: 1024px){
     .wrapper{
         padding: 22vh 0 0 0;
-        width: 45rem;
+        width: 48rem;
         margin: auto;
         display: flex;
         align-content: space-around;
@@ -215,10 +296,18 @@ main{
     }
     .palette{
         left: 0;
-    transform: translate(0, 0);
+        transform: translate(0, 0);
         margin: 0 auto;
         position: relative;
         width: 20rem;
         text-align: center;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 80%;
+    }
+    .picker-indicator{
+        margin: 0 0 1rem 0;
     }
 }
