@@ -12,6 +12,8 @@
     border-color: rgb(0, 80, 252); */
 }
 
+button:focus {outline:0;}
+
 p{
     font-size: .7rem;
 }
@@ -125,16 +127,22 @@ main{
 
 /* COLORING PAGE */
 .palette{
-      /* clip-path:  inset(0% 0% 0% 0% round 10%); */
+    /* clip-path:  inset(0% 0% 0% 0% round 10%); */
+    transform: translate(-50%, 0);
     position: absolute;
-    background-color:rgba(255, 255, 255, 1);
-    margin: 80vh 0 5vh 0;
+    /* background-color:rgba(255, 255, 125, 1); */
+    background-color: lightblue;
+    border-radius: 2.5rem 2.5rem 0 0;
+    left: 50vw;
+    margin: 90vh 0 0 0;
     text-align: center;
 }
 .picker {
-    height: 70px;
-    width: 70px;
-    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 25px;
     margin: 5px 5px;
   }
   .picker-FFFFFF { background-color: #FFFFFF; }
@@ -191,10 +199,13 @@ main{
   .picker-F99B2A { background-color: #F99B2A; }
 
   .picker-indicator {
-    height: 10px;
-    width: 95%;
-    border-radius: 5px;
-    margin: 5px 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    height: 2rem;
+    color: #fff;
+    width: 50%;
+    border-radius: 20px;
+    margin: 1rem 0;
     background-color: white;
   }
   svg {
@@ -246,8 +257,8 @@ main{
     }
     .palette{
         position: absolute;
-    transform: translate(-50%, 0);
-
+        transform: translate(-50%, 0);
+        margin: 77vh 0 0 0;
         width: 70%;
         left: 50%;
         background: none;
@@ -270,7 +281,7 @@ main{
 @media screen and (min-width: 1024px){
     .wrapper{
         padding: 22vh 0 0 0;
-        width: 45rem;
+        width: 48rem;
         margin: auto;
         display: flex;
         align-content: space-around;
@@ -284,7 +295,7 @@ main{
     }
     .palette{
         left: 0;
-    transform: translate(0, 0);
+        transform: translate(0, 0);
         margin: 0 auto;
         position: relative;
         width: 20rem;
@@ -294,5 +305,8 @@ main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 80%;
+    }
+    .picker-indicator{
+        margin: 0 0 1rem 0;
     }
 }
