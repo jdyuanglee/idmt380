@@ -3,11 +3,7 @@ var path;
 
 $(document).ready(function() {
   imageNum = findSVG('image');
-  console.log(imageNum);
-
   prepSVG(imageNum);
-  console.log(path);
-
   loadSVG('.wrapper', path)
 });
 
@@ -50,6 +46,12 @@ function prepSVG(num) {
     path = 'img/DIGM223_Srnka_Anthony.svg';
   } else if (num == 13) {
     path = 'img/DIGM223_Wolfe_Lindsey.svg';
+  } else if (num == 14) {
+    path = 'img/DIGM223_Tercek_Clay.svg';
+  } else if (num == 15) {
+    path = 'img/DIGM223_Toone_Michael.svg';
+  } else if (num == 16) {
+    path = 'img/DIGM223_Wagner_Ciaran.svg';
   } else {
     path = 'img/DIGM223_Filtz_Angela.svg';
   }
