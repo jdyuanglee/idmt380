@@ -209,6 +209,7 @@ main{
     margin: 1rem 0;
     background-color: white;
   }
+
   svg {
     /* z-index: -1; */
     transform: translate(-50%, 0);
@@ -221,7 +222,15 @@ main{
     border-style: solid;
     border-width: 2px;
     border-color: #000;
+    border-radius: 5%;
   }
+
+  .name {
+    position: fixed;
+    bottom: 13vh;
+    text-align: center;
+  }
+
   g g {
     pointer-events: all;
     display: inline-block;
@@ -256,10 +265,13 @@ main{
         position: absolute;
         top: 15%;
     }
+    .name {
+        bottom: 19.5vh;
+    }
     .palette{
         position: absolute;
         transform: translate(-50%, 0);
-        margin: 77vh 0 0 0;
+        margin: 82vh 0 0 0;
         width: 70%;
         left: 50%;
         background: none;
@@ -293,6 +305,10 @@ main{
     transform: translate(0, 0);
 
         position: relative;
+    }
+    .name {
+        bottom: 13vh;
+        text-align: left;
     }
     .palette{
         left: 0;
