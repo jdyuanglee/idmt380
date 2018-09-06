@@ -222,10 +222,11 @@ main{
     border-style: solid;
     border-width: 2px;
     border-color: #000;
+    border-radius: 5%;
   }
 
   .name {
-    position: absolute;
+    position: fixed;
     bottom: 13vh;
     text-align: center;
   }
