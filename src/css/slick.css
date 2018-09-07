@@ -147,7 +147,7 @@
 .slick-prev {
   z-index: 999;
   position: fixed;
-  bottom: 15%;
+  bottom: -15vh;
   right: 60vw;
   border-color:  lightblue;
 }
@@ -155,11 +155,11 @@
 .slick-next{
   z-index: 999;
   position: fixed;
-  bottom: 15%;
+  bottom: -15vh;
   left: 60vw;
   border-color:  #FE5946;
 }
-button{
+main button{
   transition: background-color 0.3s ease;
   background-color: #fff;
   border-style: solid;
