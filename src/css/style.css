@@ -14,10 +14,6 @@
 
 button:focus {outline:0;}
 
-p{
-    font-size: .7rem;
-}
-
 html{
 	font-size: 100%;
 }
@@ -75,7 +71,7 @@ nav svg{
 
 .brand{
     text-align: center;
-    margin: 3rem 0 0 0;    
+    margin: 3vh 0 0 0;    
 }
 
 footer{
@@ -98,7 +94,7 @@ footer p{
 .carousel{
     position: fixed;
     transform: translate(0, -50%);
-    top: 50vh;
+    top: 60vh;
 }
 
 #logo{
@@ -151,7 +147,7 @@ main{
     width: 7rem;
     margin: 0 auto;
     text-align: center;
-    padding: 19vh 0 3vh 0;
+    padding: 21vh 0 3vh 0;
 }
 .switch > h1{
     margin: auto 0;
@@ -232,8 +228,9 @@ main{
   .picker-indicator {
     border-style: solid;
     border-width: 1.5px;
-    height: 2rem;
-    color: #fff;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: #bbb;
     width: 50%;
     border-radius: 20px;
     margin: 1rem 0;
@@ -288,9 +285,9 @@ main{
     #logo{
         width: auto;
     }
-    /* .carousel{
-        margin: 6vh 0;
-        } */
+    .carousel{
+        top: 50vh;
+    }
     nav{
         position: absolute;
     }
@@ -362,5 +359,8 @@ main{
     }
     .picker-indicator{
         margin: 0 0 1rem 0;
+    }
+    .brand > .name{
+        display: none;
     }
 }

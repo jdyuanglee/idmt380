@@ -1,9 +1,11 @@
 $(document).ready(function(){
   $('.carousel').slick({
+    infinite: true,
      centerMode: true,
      centerPadding: '0px',
      slidesToShow: 5,
-    //  slidesToScroll: 4,
+    //  slidesToScroll: 5,
+    speed:350,
      accessibility: true,
      autoplay: true,
     //  dots: true,
