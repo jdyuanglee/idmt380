@@ -3,6 +3,13 @@ $(document).ready(function(){
      centerMode: true,
      centerPadding: '0px',
      slidesToShow: 5,
+    //  slidesToScroll: 4,
+     accessibility: true,
+     autoplay: true,
+    //  dots: true,
+    swipeToSlide: true,
+    waitForAnimate: false,
+     autoplaySpeed: 3000,
      responsive: [
        {
          breakpoint: 960,

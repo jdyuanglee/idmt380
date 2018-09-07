@@ -39,16 +39,43 @@ html{
     right: 0;
     top: 0;
 }
+.lever{
+    width: 1rem;
+    transition: .3s ease-in-out;
+    position: absolute;
+    right: 6.5rem;
+    top: -1rem;
+}
+.lever:hover{
+    top: 0;
+}
 
+.lever:hover .brand{
+  display: none;
+}
+
+.pvw-title:after {
+  content: 'whatever it is you want to add';
+}
 nav{
     display: flex;
     position: fixed;
 }
 
-nav h1{
-    text-align: center;
-    margin: 5rem 0;
+nav p{
+    font-family: 'Love Ya Like A Sister', cursive;
+    /* margin: 5rem 0; */
     font-size: 2.5rem;
+}
+
+nav svg{
+    width: 5rem;
+    height: auto;
+}
+
+.brand{
+    text-align: center;
+    margin: 3rem 0;    
 }
 
 footer{
@@ -69,8 +96,9 @@ footer p{
 }
 
 .carousel{
-    position: absolute;
-    top: 25vh;
+    position: fixed;
+    transform: translate(0, -50%);
+    top: 50vh;
 }
 
 #logo{
@@ -209,8 +237,7 @@ main{
     margin: 1rem 0;
     background-color: white;
   }
-
-  svg {
+.wrapper svg {
     /* z-index: -1; */
     transform: translate(-50%, 0);
     position: fixed;
@@ -252,6 +279,10 @@ main{
     }
 }
 @media screen and (min-width: 768px){
+    .lever{
+        position: absolute;
+        right: 15rem;
+    }
     #logo{
         width: auto;
     }
@@ -261,7 +292,7 @@ main{
     nav{
         position: absolute;
     }
-    svg{
+    .wrapper svg{
         position: absolute;
         top: 15%;
     }
@@ -292,6 +323,10 @@ main{
     }
 }
 @media screen and (min-width: 1024px){
+    .lever{
+        position: absolute;
+        right: 30rem;
+    }
     .wrapper{
         padding: 22vh 0 0 0;
         width: 48rem;
@@ -299,7 +334,7 @@ main{
         display: flex;
         align-content: space-around;
     }
-    svg{
+    .wrapper svg{
         top: 0%;
         left: 0%;
     transform: translate(0, 0);
