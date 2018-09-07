@@ -75,7 +75,7 @@ nav svg{
 
 .brand{
     text-align: center;
-    margin: 3rem 0;    
+    margin: 3rem 0 0 0;    
 }
 
 footer{
@@ -117,7 +117,6 @@ footer p{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top:100px;
     width: 95%;
 }
 
@@ -148,12 +147,15 @@ main{
     margin: 2rem 0;
 }
 .switch{
-    width: 10rem;
-    margin: 2rem auto;
+    display: flex;
+    width: 7rem;
+    margin: 0 auto;
     text-align: center;
+    padding: 19vh 0 3vh 0;
 }
-
-
+.switch > h1{
+    margin: auto 0;
+}
 /* COLORING PAGE */
 .palette{
     /* clip-path:  inset(0% 0% 0% 0% round 10%); */

@@ -14,9 +14,23 @@
 <body>
     <nav>
         <img src="img/Left.png" alt="left" class="left">
-        <img id="logo" src="img/signature.png" alt="logo">
+        <div class="brand">
+            <p>Michelangelo</p>
+            <svg height="126" viewBox="0 0 462 126" width="462" xmlns="http://www.w3.org/2000/svg">
+                <g fill-rule="evenodd">
+                    <path d="m.15163075 37.8892907c-1.78613668 18.9991333 12.58507045 38.4997936 23.22556845 50.9019213 2.7830297 3.2437852 15.4051082 13.124315 37.8662354 29.64159h.0000003c10.4252891 7.666461 24.2299996 8.95493 35.8939636 3.350179 66.6198945-32.0120924 104.3912985-53.0360046 113.3142105-63.0717362 14.604275-16.4256446-.818775-65.65878844-32.244974-57.72338688-18.962854 4.78829338-31.372421 8.66589279-52.410954 25.36500848-13.827586 10.975502-38.3750566 34.4817435-47.5932777 38.0095271-23.2436516 8.8952708-40.7885368-29.4008584-49.1189191-38.0095271s-27.14571677-7.462709-28.93185345 11.5364243z" />
+                    <path d="m246.151631 37.8892907c-1.786137 18.9991333 12.58507 38.4997936 23.225568 50.9019213 2.78303 3.2437852 15.405108 13.124315 37.866236 29.64159 10.425289 7.666461 24.23 8.95493 35.893963 3.350179 66.619895-32.0120924 104.391299-53.0360046 113.314211-63.0717362 14.604275-16.4256446-.818775-65.65878844-32.244974-57.72338688-18.962854 4.78829338-31.372421 8.66589279-52.410954 25.36500848-13.827586 10.975502-38.375057 34.4817435-47.593278 38.0095271-23.243651 8.8952708-40.788537-29.4008584-49.118919-38.0095271s-27.145717-7.462709-28.931853 11.5364243z"
+                        transform="matrix(-1 0 0 1 708 0)" />
+                </g>
+            </svg>
+        </div>
         <img src="img/Right.png" alt="right" class="right">
     </nav>
+    <div class="switch">
+        <a href="#"><img src="../img/grid.png" alt="grid"></a>
+        <h1>|</h1>
+        <a href="index.html"><img src="../img/carousel.png" alt="carousel"></a>
+    </div>
     <main class="grid">
         <div id="element" onclick="location.href='page.html?image=1';" class="start">
             <img src="img/DIGM223_An_Christina.jpg" alt="sketch">
@@ -59,9 +73,6 @@
         </div>
         </div>
     </main>
-    <div class="switch">
-    <button onclick="location.href='index.html'" >Carousel</button>
-</div>
     <footer>
         <p>Michelangelo Colorbook</p>
         <p style="text-align: right;">Copyright 2018</p>
@@ -79,6 +90,7 @@
     </script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
+
         </script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
