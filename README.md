@@ -1,5 +1,5 @@
 # IDMT380 Group Beta
-This is the **BETA** version
+This is the **FINAL** version
 
 [Link to the page](http://yuangli.com/idmt380/)
 
